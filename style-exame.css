@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(222, 236, 248);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333; 
+    margin: 10px 0; 
+}
+
+h2 {
+    color: rgb(4, 4, 34);
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.raiox, .ultrassom, .tomografia, .clinico, .urina-fez, .testes {
+    display: flex;
+    justify-content: space-around;
+    border: #333;
+    flex-wrap: wrap; 
+}
+
+.raiox .servicos,
+.ultrassom .servicos,
+.tomografia .servicos,
+.clinico .servicos,
+.urina-fez .servicos,
+.testes .servicos {
+    width: 300px; 
+    height: auto; 
+    margin: 10px;
+}
+
+.servicos:hover {
+    transform: none;
+}
+
+
+
+
+
+@media (max-width: 769px) {
+
+
+    .raiox, .ultrassom, .tomografia, .clinico, .urina-fez, .testes {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .raiox .servicos,
+    .ultrassom .servicos,
+    .tomografia .servicos,
+    .clinico .servicos,
+    .urina-fez .servicos,
+    .testes .servicos {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .raiox .servicos,
+    .ultrassom .servicos,
+    .tomografia .servicos,
+    .clinico .servicos,
+    .urina-fez .servicos,
+    .testes .servicos {
+        width: 100%;
+        padding: 0 10px;
+    }
+}

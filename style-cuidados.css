@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: #FEFEFE;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav img {
+    height: 75px;
+    margin-left: 40px;
+}
+
+.menu .options a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.options {
+    display: flex;
+}
+
+.options a {
+    text-decoration: none;
+    color: #0E223B;
+    padding: 5px 10px;
+    position: relative; 
+    transition: border-bottom 0.5s ease; 
+}
+
+.options a:hover {
+    font-weight: bold;
+    color: #3D9CD5;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#apresent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#apresent .text {
+    margin-left: 80px;
+    text-align: left;
+    max-width: 900px;
+}
+
+#apresent .text h2 {
+    font-size: 5em;
+    color: #0E223B;
+    margin-bottom: 5px; 
+}
+
+#apresent .text span {
+    font-weight: 700;
+    color: #3D9CD5;
+}
+
+#apresent picture img {
+    margin-right: 80px;
+    max-width: 100%;
+    width: 800px;
+}
+
+#apresent .text p {
+    font-size: 18px;
+    margin-top: 0; 
+}
+
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+        font-size: 1.5em;
+        cursor: pointer;
+        padding: 10px;
+        color: #0E223B; 
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav img {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .options {
+        flex-direction: column;
+        align-items: center;
+        display: none; 
+    }
+    
+    .options a {
+        margin: 5px 0;
+    }
+
+    .options.show {
+        display: flex; 
+    }
+    
+    #apresent {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    #apresent .text {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    #apresent .text h2 {
+        font-size: 3em;
+    }
+    
+    #apresent picture img {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .menu nav .menu-icon {
+        position: left;
+    }
+}
+
+@media (max-width: 480px) {
+    #apresent .text h2 {
+        font-size: 2.5em;
+    }
+    
+    #apresent .text p {
+        font-size: 16px;
+    }
+}
+
+#container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+#container h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+
+
+.container-conteudos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-bottom: 30px;
+}
+
+.servicos {
+    width: 300px; 
+    height: auto; 
+    margin: 10px;    
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.servicos img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.servicos h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.servicos p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container-conteudos ul li {
+    list-style-type: none;
+}
+
+.container-conteudos .servicos strong {
+    color: #0E223B;
+}
+
+.container-conteudos .servicos ul, li, h3 {
+    text-align: left;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-conteudos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicos {
+        width: 80%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .options {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .options a {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .options.show {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos {
+        width: calc(100% - 20px); 
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
